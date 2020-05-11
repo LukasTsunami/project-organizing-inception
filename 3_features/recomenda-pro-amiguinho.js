@@ -6,6 +6,9 @@ export default class RecomendaProAmiguinho extends Feature {
     super();
     this.user_story = new Recomendar();
 
-    post(`${BaseApiUrl}/compartilhar?amigo=:UUID`, "Charuto@share");
+    post(
+      `${BaseApiUrl}/compartilhar?amigo=:UUID`,
+      "http://share-microservice/charuto"
+    );
   }
 }
