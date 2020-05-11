@@ -6,6 +6,6 @@ export default class ListaCharuto extends Feature {
     super();
     this.user_story = new VenderCharuto();
 
-    get(`${BaseApiUrl}/loja/charutos`, "Charuto@index");
+    get(`${BaseApiUrl}/loja/charutos`, "CharutoController@index");
   }
 }

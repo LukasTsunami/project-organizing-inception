@@ -6,6 +6,6 @@ export default class VendeCharuto extends Feature {
     super();
     this.user_story = new VenderCharuto();
 
-    post(`${BaseApiUrl}/loja/charutos`, "CharutoVenda@create");
+    post(`${BaseApiUrl}/loja/charutos`, "CharutoVendaController@create");
   }
 }
